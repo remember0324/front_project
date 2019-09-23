@@ -18,10 +18,71 @@
             text-decoration: none;
             color: cyan;
         }
+
+        /*相邻兄弟选择器*/
+        .xuhui + p {
+            font-weight: 900;
+            color: #1a4c80;
+        }
+
+        /*兄弟选择器（同一个父级下该元素后所有的相同的元素）*/
+        h4 ~ a {
+            border: 1px solid blue;
+        }
+
+        /*属性选择器*/
+        input[type="password"] {
+            border: 1px solid blue;
+        }
+
         /*交集选择器(多个条件满足才行)*/
-        div.red{
+        div.red {
             color: red;
         }
+
+        /*并集选择器*/
+        h2, i, strong {
+            color: pink;
+        }
+
+        /*伪类选择器*/
+        .wei a:nth-of-type(1):link {
+            /*未访问地链接状态*/
+            color: #1885cb;
+        }
+
+        .wei a:nth-of-type(2):visited {
+            /*已访问的链接*/
+            color: #1a4c80;
+        }
+
+        .wei a:nth-of-type(3):hover {
+            /*鼠标悬停到链接上*/
+            color: red;
+        }
+
+        .wei a:nth-of-type(4):active {
+            /*鼠标按下不松开地样子*/
+            color: black;
+        }
+
+        /*伪类选择器综合使用在一个标签上使用地顺序不能变-*/
+        .wei a:last-of-type:link {
+            color: #1885cb;
+        }
+
+        .wei a:last-of-type:visited {
+            color: #1a4c80;
+        }
+
+        .wei a:last-of-type:hover {
+            color: red;
+        }
+
+        .wei a:last-of-type:active {
+            color: black;
+        }
+
     </style>
 </head>
 <body>
@@ -30,18 +91,15 @@
         <span>海淀</span>
         <span>朝阳</span>
         <span>通州</span>
-        <span>昌平</span>
     </div>
     <div class="hu">上海
         <p>黄埔
             <span>南京东路</span>
             <span>黄陂北路</span>
             <span>北京西路</span>
-            <span>复兴东路</span>
         </p>
-        <p>徐汇</p>
+        <p class="xuhui">徐汇</p>
         <p>浦东</p>
-        <p>静安</p>
     </div>
 </div>
 <hr>
@@ -57,15 +115,35 @@
                 <a href="#">二级菜单</a>
             </div>
         </li>
-
+        <li>
+            <div>
+                <h4>二级菜单头</h4>
+                <a href="#">二级菜单2</a>
+                <a href="#">二级菜单2</a>
+                <h5>二级菜单3</h5>
+                <a href="#">二级菜单2</a>
+            </div>
+        </li>
     </ul>
+    <input type="text" placeholder="请输入姓名">
+    <input type="password" placeholder="请输入密码">
 </div>
 <hr>
-<div>交集选择器1</div>
-<div class="red">交集选择器2</div>
-<div>交集选择器3</div>
-<p>交集选择器4</p>
-<p class="red">交集选择器5</p>
-<p>交集选择器6</p>
+<div class="red">交集选择器1</div>
+<p>交集选择器2</p>
+<p class="red">交集选择器3</p>
+<hr>
+<h2>并集选择器4</h2>
+<strong>并集选择器5</strong>
+<i>并集选择器6></i>
+<hr>
+<div class="wei">
+    <p>伪类选择器</p>
+    <a href="#">link:未访问的链接</a><br>
+    <a href="https://www.baidu.com" target="_blank">visited:已访问的链接</a><br>
+    <a href="#">hover:鼠标悬停到链接上</a><br>
+    <a href="#">active:选定的链接</a><br>
+    <a href="#">综合</a><br>
+</div>
 </body>
 </html>
