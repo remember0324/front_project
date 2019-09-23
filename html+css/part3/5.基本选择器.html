@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <style>
+        /*标签选择器*/
+        p {
+            color: red;
+        }
+
+        /*类选择器*/
+        .myH {
+            color: green;
+        }
+
+        /*id选择器*/
+        #dd {
+            color: blue;
+        }
+    </style>
+    <style type="text/css">
+        /*标签选择器练习*/
+        span {
+            font-size: 100px;
+            color: green;
+        }
+
+        .g {
+            color: #1885cb;
+        }
+
+        .red {
+            color: red;
+        }
+
+        #myO {
+            color: #e3b734;
+        }
+    </style>
+    <style>
+        /*多类名选择器*/
+        .orange {
+            color: orange;
+        }
+
+        .font20 {
+            font-size: 20px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<P>我是类选择器</P>
+<H4 class="myH">我是标签选择器</H4>
+<div id="dd">我是id选择器</div>
+<hr>
+<div>
+    <span class="g">G</span>
+    <span class="red">o</span>
+    <span id="myO">o</span>
+    <span class="g">g</span>
+    <span>l</span>
+    <span class="red">e</span>
+</div>
+<hr>
+<!--多类名选择器-->
+<div>
+    <div class="orange font20">多类名1</div>
+    <div>多类名2</div>
+    <div class="orange">多类名3</div>
+    <div>多类名4</div>
+    <div class="orange">多类名5</div>
+    <div class="font20">多类名6</div>
+    <div class="orange font20">多类名7</div>
+</div>
+</body>
+</html>

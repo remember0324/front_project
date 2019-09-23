@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+</head>
+<body>
+<!--表格的主要作用就是用来显示数据的-->
+<!--表题标签:caption-->
+<!--行标签：tr -->
+<!--表头标签(也属于单元格)-：th  有自动加粗居中属性->
+<!--单元格：td-->
+<!--align属性:表格相对于上级目录的位置-->
+<!--cellspacing属性:单元格之间边框的空白间距-->
+<!--cellpadding属性:单元格内容与单元格边框之间的空白间距-->
+<!--一般情况下3参为0  border，cellspacing，cellpadding都为0-->
+<table width="500px" border="1px" align="center" cellspacing="0px" cellpadding="10px">
+    <caption>学生信息表</caption>
+    <tr>
+        <th>学号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>张军</td>
+        <td>男</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>002</td>
+        <td>刘梅</td>
+        <td>女</td>
+        <td>14</td>
+    </tr>
+    <tr>
+        <td>003</td>
+        <td>陶明</td>
+        <td>男</td>
+        <td>15</td>
+    </tr>
+</table>
+<hr>
+
+<!--跨行合并：rowspan-->
+<!--跨列合并：colspan-->
+<p>合并单元格</p>
+<table border="1px" width="500px" style="border: 1px solid red">
+    <tr>
+        <th colspan="3">1</th>
+        <th>4</th>
+    </tr>
+    <tr>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+    </tr>
+    <tr>
+        <th>9</th>
+        <th>10</th>
+        <th>11</th>
+        <th>12</th>
+    </tr>
+    <tr>
+
+        <th>13</th>
+        <th rowspan="2">14</th>
+        <th>15</th>
+        <th>16</th>
+    </tr>
+    <tr>
+        <th>17</th>
+        <th>19</th>
+        <th>20</th>
+    </tr>
+</table>
+</body>
+</html>

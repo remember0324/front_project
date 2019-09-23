@@ -1,0 +1,21 @@
+body {
+    background: url("../image/bg2.jpg");
+}
+
+h3, div {
+    color: green;
+    text-align: center;
+}
+
+p {
+    text-indent: 2em;
+    line-height: 25px;
+    color: #1a4c80;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+h4 {
+    color: firebrick;
+    font-size: 16px;
+}
