@@ -3,8 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>复合选择器</title>
+    <style>
+        /*后代选择器(父级下面所有的被选择的标签)*/
+        div span {
+            color: green;
+        }
+
+        .hu p {
+            color: orange;
+        }
+
+        /*子代选择器 子指的是父级紧挨着的隔级不行*/
+        ul li > a {
+            text-decoration: none;
+            color: cyan;
+        }
+        /*交集选择器(多个条件满足才行)*/
+        div.red{
+            color: red;
+        }
+    </style>
 </head>
 <body>
+<div>
+    <div>北京
+        <span>海淀</span>
+        <span>朝阳</span>
+        <span>通州</span>
+        <span>昌平</span>
+    </div>
+    <div class="hu">上海
+        <p>黄埔
+            <span>南京东路</span>
+            <span>黄陂北路</span>
+            <span>北京西路</span>
+            <span>复兴东路</span>
+        </p>
+        <p>徐汇</p>
+        <p>浦东</p>
+        <p>静安</p>
+    </div>
+</div>
+<hr>
+<div>
+    <ul>
+        <li>
+            <a href="#">一级菜单</a>
+        </li>
+        <li>
+            <div>
+                <a href="#">二级菜单</a>
+                <a href="#">二级菜单</a>
+                <a href="#">二级菜单</a>
+            </div>
+        </li>
 
+    </ul>
+</div>
+<hr>
+<div>交集选择器1</div>
+<div class="red">交集选择器2</div>
+<div>交集选择器3</div>
+<p>交集选择器4</p>
+<p class="red">交集选择器5</p>
+<p>交集选择器6</p>
 </body>
 </html>
