@@ -11,8 +11,8 @@
         }
 
         span {
-            width: 300px; /*无作用*/
-            height: 300px; /*无作用*/
+            width: 300px; /*对行内无作用*/
+            height: 300px; /*对行内无作用*/
             background: #cccccc;
         }
 
@@ -28,6 +28,18 @@
 <div>块元素1</div>
 <div>块元素2</div>
 <hr>
+<!--p,h1-h6等文字块元素能组成段落,不能放其他块级元素-->
+<h5>
+    <div>p,h1-h6等文字块元素能组成段落,不能放其他块级元素</div>
+</h5>
+<!--a标签里里面不能再放a标签,a标签里面可以放块级元素-->
+<a href="#">错误
+    <a href="#">错误</a>
+</a>
+<a href="#">
+    <div>a标签里面可以放块级元素</div>
+</a>
+<hr>
 <!--行内元素：只能放行内元素（行宽由内容决定）-->
 <span>行内元素1</span>
 <span>行内元素2</span>
@@ -37,5 +49,8 @@
 <p style="display: inline-block">行内块元素1</p><strong>我是行内元素</strong>
 <p>我是块元素</p>
 <p style="display: inline-block">行内块元素2</p>
+<hr>
+<div style="display: inline">块元素转行内元素</div>
+<span style="display: block">块元素转行内元素</span>
 </body>
 </html>
