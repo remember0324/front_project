@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型-border</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            /*边框宽度*/
+            /* border-width: 10px;*/
+
+            /*边框颜色*/
+            /*border-color: #62ffaa;*/
+
+            /*边框样式border-style*/
+            /*none 定义无边框。
+            hidden 与 "none" 相同。不过应用于表时除外，对于表，hidden 用于解决边框冲突。
+            dotted 定义点状边框。在大多数浏览器中呈现为实线。
+            dashed 定义虚线。在大多数浏览器中呈现为实线。
+            solid 定义实线。
+            double 定义双线。双线的宽度等于 border-width 的值。
+            以下基本不用
+            groove 定义 3D 凹槽边框。其效果取决于 border-color 的值。
+            ridge 定义 3D 垄状边框。其效果取决于 border-color 的值。
+            inset 定义 3D inset 边框。其效果取决于 border-color 的值。
+            outset 定义 3D outset 边框。其效果取决于 border-color 的值。
+            inherit 规定应该从父元素继承边框样式。
+             */
+            /* border-style: solid;*/
+
+            /*连写*/
+            border: 1px solid red;
+
+            /*分开写*/
+            /*border-top: 10px dashed green;
+            border-bottom: 10px dashed green;
+            border-left: 10px dashed green;
+            border-right: 10px dashed green;*/
+        }
+
+    input{
+        /*先清除样式*/
+        border: 0;
+        border-bottom: 1px dotted;
+    }
+
+    </style>
+</head>
+<body>
+
+<div></div>
+
+用户名：<input type="text">
+
+</body>
+</html>

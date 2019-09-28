@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模式-内边距</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 10px solid red;
+            /*边距*/
+            /*padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px;*/
+
+
+            /*合并-有顺序的上右下左像素的内边距*/
+            padding: 10px 20px 30px 40px;
+            /*上右下左都是20px*/
+            /*padding: 20px;*/
+        }
+
+        a {
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            background: #a4a4a4;
+            color: white;
+            text-decoration: none;
+            /*a标签内的字体数量不一样不能指定宽度来实现*/
+            /*可以用内边距来实现文字的左右对齐*/
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div>盒子模式-内边距</div>
+
+<a href="#">首页</a>
+<a href="#">菜单导航栏</a>
+
+</body>
+</html>
