@@ -1,3 +1,11 @@
-#stack{
-    color: blue;
+#priority {
+    color: #FF0000;
+}
+
+.priority {
+    color: #666666;
+}
+
+p {
+    color: #fda1ff;
 }

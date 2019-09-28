@@ -1,0 +1,45 @@
+<style>
+    div {
+        /*background: background-color||background-image||background-repeat||background-attachment||background-position;*/
+        /*  background-repeat
+            repeat : 　背景图像在纵向和横向上平铺
+            no-repeat : 　背景图像不平铺
+            repeat-x : 　背景图像在横向上平铺
+            repeat-y : 　背景图像在纵向平铺
+            --------------------------------
+            background-attachment
+            scroll 默认值。背景图像会随着页面其余部分的滚动而移动。
+            fixed 当页面的其余部分滚动时，背景图像不会移动。
+            inherit 规定应该从父元素继承 background-attachment 属性的设置。
+            local 背景图像相对于元素内容固定，
+            --------------------------------
+            background-position
+            1. positon后面可以跟方位名词  他们之间可以没有上下顺序
+            2. position 如果只写一个方位名词，另外一个默认是居中的
+            3. position 后面也可以跟 值px 但是 必须有顺序 x 在前面 y 后面 不能颠倒
+            3. position 后面也可以跟 百分比 但是 必须有顺序 x 在前面 y 后面 不能颠倒
+            background-position: left;  top 上  bottom 下  left  左  right  右
+            background-position: bottom;  top 上  bottom 下  left  左  right  右
+            background-position:  12px 50px;
+        */
+        /*background-color: black;
+        background-image: url("../image/t2.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;*/
+        /*连写*/
+        background: #1885cb url("../image/t2.jpg") no-repeat fixed center;
+
+
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景</title>
+</head>
+<body>
+<div style="width: 1366px;height: 768px">背景</div>
+</body>
+</html>

@@ -6,21 +6,71 @@
     <link rel="stylesheet" href="../css/part4_1.css">
     <style>
         /*层叠性*/
-        /*层叠性优先级:外部样式<引用样式<行内样式*/
-        /*元素选择器优先级:元素选择<类选择<id选择*/
-        .stack {
+        div {
             color: red;
             font-size: 25px;
         }
 
         div {
-            /*后面的颜色会覆盖前面的颜色*/
+            /*后面的颜色会覆盖前面的颜色,就近原则*/
+            /*层叠性只覆盖相同的的css样式,不用的样式不会覆盖2*/
             color: pink;
         }
+
+        /*继承性*/
+        .extends {
+            /*li拥有父级ul的某些属性,例如文本颜色,字号等*/
+            color: red;
+        }
+        ol li{
+            /*在自己指定了样式后,父类同样样式在自己上将不起作用*/
+            color: #1885cb;
+        }
+        /*优先级*/
+        /*选择器优先级:元素选择<类选择<id选择*/
+        /*样式优先级:外部样式<引用样式<行内样式*/
+        /*!important:优先级无穷大*/
+        /*权重
+            *:0000
+            div:0001
+            .class:0010
+            #id:0100
+            行内:1000
+            !important:∞
+        */
+        #priority{
+            color: #c39fff;
+        }
+        .priority{
+            color: #82adff;
+        }
+        p{
+            color: cyan;
+        }
+        p{
+            color: orange;!important;
+        }
     </style>
+
+
 </head>
 <body>
-<!--直接写在元素上的颜色覆盖所有以前的颜色-->
-<div id="stack" class="stack" style="color: palegreen">测试css的层叠性</div>
+<div>测试css的层叠性</div>
+<hr>
+<ul class="extends">
+    <li>测试css的继承性1</li>
+</ul>
+<ol class="extends">
+    <li>测试css的继承性2</li>
+</ol>
+<hr>
+
+
+
+<!--直接写在元素上优先级高于id 的颜色覆盖所有以前的颜色-->
+<p id="priority" class="priority">优先级测试</p>
+
+
+<h3></h3>
 </body>
 </html>
