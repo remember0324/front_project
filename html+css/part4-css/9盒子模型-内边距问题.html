@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内边距问题</title>
+    <style>
+        .div{
+            /*问题：宽高是盒子内部内容的宽度不包括内外边距，所以padding值会撑大盒子*/
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            padding: 20px;
+        }
+        .div{
+            /*解决办法：更改宽高*/
+            width: 160px;
+            height: 160px;
+        }
+
+        .father{
+            background: #1885cb;
+            width: 100px;
+            height: 100px;
+            padding: 100px;
+        }
+        .son{
+            background: #ff8715;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<div class="div"></div>
+<br/>
+<div class="father">
+    <div class="son"></div>
+</div>
+</body>
+</html>

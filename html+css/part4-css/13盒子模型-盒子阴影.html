@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子阴影</title>
+    <style>
+        /*h-shadow:必须，水平方向阴影，可以负值
+          v-shadow:必须，垂直方向阴影，可以负值
+          blur:模糊距离（可选）
+          spread：阴影的尺寸（可选）
+          color:阴影的颜色（可选）
+          inset：外部阴影（可选）
+          */
+        div {
+            /*background: red;*/
+            width: 200px;
+            height: 200px;
+            /*变换时间1s*/
+            transition: box-shadow 1s ;
+
+        }
+        div:hover{
+            box-shadow: 0 10px 20px 5px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .father {
+            margin-top: 50px;
+            border: 1px solid green;
+        }
+
+        .one {
+            /*绝对定位：完全脱标，完全不占位置（相当于脱离了文档流）*/
+            /*默认相对于全屏幕(不包括滚动条 )定位*/
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            width: 200px;
+            height: 200px;
+            background: #f9264b;
+        }
+
+        .two {
+            width: 300px;
+            height: 300px;
+            background: #1885cb;
+        }
+    </style>
+</head>
+<body>
+<!--元素的定位属性主要包括定位模式和边偏移两部分-->
+
+<!--position属性用于定义元素的定位模式，其基本语法格式如下：
+    选择器{position:属性值;}
+    position属性的常用值
+    static自动定位（默认定位方式）
+    relative相对定位，相对于其原文档流的位置进行定位
+    absolute绝对定位，相对于其上一个已经定位的父元素进行定位
+    fixed固定定位，相对于浏览器窗口进行定位
+-->
+<!--边偏移属性描述
+        top顶端偏移量，定义元素相对于其父元素上边线的距离
+        bottom底部偏移量，定义元素相对于其父元素下边线的距离
+        left左侧偏移量，定义元素相对于其父元素左边线的距离
+        right右侧偏移量，定义元素相对于其父元素右边线的距离
+    -->
+<div class="father">
+    <div class="one"></div>
+</div>
+
+<div class="two"></div>
+</body>
+</html>

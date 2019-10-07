@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>版心和布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .top, .bannnr, .main, .footer {
+            width: 1200px;
+            border: 1px dashed #ccc;
+            margin: 0 auto;
+            background: #eee;
+        }
+
+        .top {
+            height: 50px;
+        }
+
+        .bannnr {
+            height: 80px;
+            /*margin: 0 auto;*/
+            margin: 5px auto;
+        }
+
+        .main {
+            height: 700px;
+        }
+
+        .footer {
+            height: 80px;
+            border: 1px dashed #ccc;
+            /*margin: 0 auto;*/
+            margin: 5px auto 0;
+        }
+
+    </style>
+</head>
+<body>
+<!--版心布局方式：一列固定宽度且居中-->
+<div class="top">导航栏</div>
+<div class="bannnr">广告栏</div>
+<div class="main">主体内容</div>
+<div class="footer">尾部</div>
+</body>
+</html>

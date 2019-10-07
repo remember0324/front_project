@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位练习2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .nav {
+            width: 1280px;
+            height: 472px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .main {
+            width: 960px;
+            height: 80px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -480px;
+            background: black;
+        }
+
+        .main li {
+            list-style: none;
+            float: left;
+            text-align: center;
+        }
+
+        .main a {
+            display: inline-block;
+            width: 160px;
+            height: 80px;
+            line-height: 80px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .main a:hover {
+            color: black;
+            background: white;
+        }
+
+        .lunbotu {
+            width: 520px;
+            height: 280px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .lunbotu a {
+            display: block;
+            width: 24px;
+            height: 36px;
+            position: absolute;
+            top: 50%;
+            margin-top: -18px;
+
+        }
+
+        .lunbotu a:nth-of-type(1) {
+            left: 0;
+            background: url("../image/left.png") no-repeat;
+        }
+
+        .lunbotu a:nth-of-type(2) {
+            right: 0;
+            background: url("../image/right.png") no-repeat;
+        }
+
+        .lunbotu ul {
+            background: rgba(255, 255, 255, 0.3);
+            width: 70px;
+            height: 13px;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -35px;
+            border-radius: 5px;
+        }
+
+        .lunbotu ul li {
+            width: 8px;
+            height: 8px;
+            display: block;
+            margin: 3px;
+            background-color: #B7B7B7;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .lunbotu ul li:nth-of-type(1){
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <img src="../image/sf.png">
+    <div class="main">
+        <ul>
+            <li><a href="#">运单查询</a></li>
+            <li><a href="#">运单查询</a></li>
+            <li><a href="#">运单查询</a></li>
+            <li><a href="#">运单查询</a></li>
+            <li><a href="#">运单查询</a></li>
+            <li><a href="#">运单查询</a></li>
+        </ul>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<div class="lunbotu">
+    <img src="../image/taobao.jpg">
+    <a href="#"></a>
+    <a href="#"></a>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>

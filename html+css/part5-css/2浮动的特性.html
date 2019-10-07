@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动与布局</title>
+    <style>
+        /*如果一个父盒子里面的子盒子浮动，其他子盒子都需浮动才能对齐*/
+        .one {
+            height: 100px;
+            width: 100px;
+            background: red;
+            float: left;
+        }
+
+        .two {
+            height: 200px;
+            width: 200px;
+            background: pink;
+            float: left;
+
+        }
+
+        .three {
+            height: 300px;
+            width: 300px;
+            background: purple;
+            float: left;
+        }
+
+        /*浮动的隐藏特性，没有指定宽盒子就是行内块元素，盒子的宽度是根据内容实现的*/
+        .f {
+            height: 100px;
+            background: #e3b734;
+            float: left;
+        }
+        /*行内元素浮动就不需要转为block，自动有行内块元素的属性*/
+        span{
+            height: 200px;
+            /*width: 200px;*/
+            display: block;
+            background: #0f81e3;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div style="height: 300px">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</div>
+<br>
+<div class="f">浮动的隐藏特性，没有指定宽盒子就是行内块元素，盒子的宽度是根据内容实现的</div>
+<span>行内元素浮动就不需要转为block，自动有行内块元素的属性</span>
+</body>
+</html>

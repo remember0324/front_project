@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>版心和布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top, .bannnr, .main, .footer {
+            width: 1200px;
+            border: 1px dashed #ccc;
+            margin: 0 auto;
+            background: #eee;
+        }
+
+        .top {
+            height: 50px;
+        }
+
+        .bannnr {
+            height: 200px;
+            margin: 5px auto;
+        }
+
+        .bannnr .content1 {
+            height: 200px;
+            width: 294px;
+            background: #c39fff;
+            margin-right: 8px;
+            float: left;
+        }
+
+        .bannnr .content2 {
+            height: 200px;
+            width: 294px;
+            background: #2effbc;
+            margin-right: 8px;
+            float: left;
+        }
+
+        .bannnr .content3 {
+            height: 200px;
+            width: 294px;
+            background: #4296ff;
+            margin-right: 8px;
+            float: left;
+        }
+
+        .bannnr .content4 {
+            height: 200px;
+            width: 294px;
+            background: #a4ffd3;
+            float: left;
+        }
+
+        .main {
+            height: 700px;
+            background: none;
+        }
+
+        .menu {
+            height: 700px;
+            width: 190px;
+            background: #eee;
+            float: left;
+        }
+
+        .content {
+            height: 700px;
+            width: 1000px;
+            background: #eee;
+            float: right;
+        }
+
+        .footer {
+            height: 80px;
+            border: 1px dashed #ccc;
+            margin: 5px auto 0;
+        }
+    </style>
+</head>
+<body>
+<!--版心布局方式：通栏平均分布-->
+<div class="top">
+    <div class="top _inner">导航栏</div>
+</div>
+<div class="bannnr">
+    <div class="content1">通栏1</div>
+    <div class="content2">通栏2</div>
+    <div class="content3">通栏3</div>
+    <div class="content4">通栏4</div>
+</div>
+<div class="main">
+    <div class="menu">左侧菜单</div>
+    <div class="content">右侧主体</div>
+</div>
+<div class="footer">尾部</div>
+
+<!--在边框上写文字-->
+<fieldset>
+    <legend style="margin: auto">标题</legend>
+    <p>内容</p>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位居中对齐</title>
+    <style>
+        .one {
+            /*margin: 0 auto对于浮动和定位都会失效*/
+            /*margin: 0 auto;*/
+
+            /*先定位50%到中间偏移半个盒子，再用外边距调回来*/
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            top: 50%;
+            margin-top: -100px;
+
+            width: 200px;
+            height: 200px;
+            background: #1885cb;
+        }
+    </style>
+</head>
+<body>
+<div class="one">定位测试</div>
+</body>
+</html>

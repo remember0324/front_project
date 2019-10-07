@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>固定定位练习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            height: 44px;
+            background: url("../image/top.png") no-repeat top center;
+            width: 100%;
+            /*加了固定定位后变成了行内块元素 元素宽度为0不能固定定位，所以需要加width: 100%;*/
+            position: fixed;
+            top: 0;
+            left: 0;
+
+        }
+
+        .box {
+            width: 1002px;
+            margin: 44px auto 0;
+        }
+
+        .ad_l, .ad_r {
+            position: fixed;
+            top: 150px;
+        }
+
+        .ad_r {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+
+<img src="../image/ad-l.png" class="ad_l">
+<img src="../image/ad-r.png" class="ad_r">
+
+<div class="top"></div>
+<div class="box">
+    <img src="../image/box.png">
+</div>
+
+</body>
+</html>

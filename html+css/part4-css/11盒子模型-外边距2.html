@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>外边距</title>
+    <style>
+        /** {
+            margin: 0;
+            padding: 0;
+        }*/
+        /*直接写出来比用*对浏览器来说解析更快*/
+        body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, th, tr, td, dl, dt, dd, form, fieldset, legend, input, textarea, select {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <style>
+        /*垂直方向上下两个块元素相遇时，上面的有下外边距，下面的有上外边距，他们之间的垂直间距不是两个外边距之和而是取较大者-外边距塌陷*/
+        /*水平方向不存在这个问题*/
+        .div1 {
+            width: 100px;
+            height: 100px;
+            background: #1885cb;
+            margin-bottom: 20px;
+        }
+
+        .div2 {
+            width: 100px;
+            height: 100px;
+            background: #c39fff;
+            margin-top: 50px;
+        }
+
+        .div3 {
+            width: 100px;
+            height: 100px;
+            background: #e3b734;
+            margin-right: 20px;
+            display: inline-block;
+        }
+
+        .div4 {
+            width: 100px;
+            height: 100px;
+            background: #666666;
+            margin-left: 50px;
+            display: inline-block;
+        }
+    </style>
+    <style>
+        /*两个嵌套的块元素，如果父元素没有上内边距及边框，则父元素的上外边距与子元素的上外边距法师合并，取二者较大者*/
+        /*解决办法：1父元素添加边框，2父元素加padding,3overflow:hidden*/
+        .div5 {
+            width: 200px;
+            height: 200px;
+            background: pink;
+            /*overflow: hidden;*/
+        }
+
+        .div6 {
+            width: 100px;
+            height: 100px;
+            background: purple;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">外边距合并问题垂直方向--1</div>
+<div class="div2">外边距合并问题垂直方向--2</div>
+<div class="div3">外边距合并问题水平方向--3</div>
+<div class="div4">外边距合并问题水平方向--4</div>
+<hr>
+<div class="div5">
+    <div class="div6">嵌套块元素垂直外边距合并</div>
+</div>
+</body>
+</html>
