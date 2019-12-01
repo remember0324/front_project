@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>滑动门</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*ul{
+            background: black;
+        }*/
+
+        li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            padding: 0 20px;
+        }
+
+        /*a标签左侧加入一张图片*/
+        a {
+            display: inline-block;
+            height: 33px;
+            line-height: 33px;
+            text-decoration: none;
+            color: white;
+            padding-left: 15px;
+            background: url("../image/hdm.png") no-repeat top left;
+        }
+
+        /*span标签右侧加入一张图片*/
+        span {
+            padding-right: 15px;
+            height: 33px;
+            display: inline-block;
+            background: url("../image/hdm.png") no-repeat top right;
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+    <li>
+        <a href="#"><span>首页</span></a>
+    </li>
+    <li>
+        <a href="#"><span>公众平台</span></a>
+    </li>
+    <li>
+        <a href="#"><span>帮助与反馈</span></a>
+    </li>
+    <li>
+        <a href="#"><span>企业微信</span></a>
+    </li>
+
+
+</ul>
+</body>
+</html>

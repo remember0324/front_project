@@ -13,7 +13,16 @@ li {
 
 body {
     background-color: #fafafa;
-    height: 3000px;
+}
+
+/*清除浮动*/
+/*使用overflow：hidden会让超出范围的隐藏  浮动没有效果*/
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
 /*导航栏 start*/
@@ -58,33 +67,30 @@ nav:first-child {
 
 /*广告图片 end*/
 
-/*服务 start*/
-.service {
+.service, .classic, .partner {
     width: 1055px;
     margin: 75px auto 0;
-    /* border: 1px solid green;*/
-
 }
 
-.service .service_hd {
+.service_hd, .classic_hd, .partner_hd {
     text-align: center;
     border-top: 1px solid red;
     margin: 0 25px;
 
 }
 
-.service_hd h3 {
+.service_hd h3, .classic_hd h3, .partner_hd h3 {
     margin: -13px auto 15px;
 }
 
+/*服务 start*/
 .service_hd p {
     color: #595359;
     font-size: 14px;
     margin: 0 75px;
 }
 
-.service_bd {
-    overflow: hidden;
+.service_bd, .classic_bd {
     margin-top: 40px;
 }
 
@@ -139,8 +145,121 @@ nav:first-child {
 }
 
 /*服务 end*/
+
+/*经典案例 start*/
 .classic {
-    width: 1055px;
-    height: 400px;
-    border: 1px solid red;
+    background: white;
+}
+
+.classic_bd {
+    position: relative;
+}
+
+.classic_bd li {
+    background: white;
+    width: 322px;
+    float: left;
+}
+
+.classic_bd li:nth-of-type(2) {
+    margin: 0 44px;
+}
+
+.classic_ct {
+    height: 211px;
+    position: relative;
+}
+
+.classic_ct p {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    height: 45px;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 45px;
+    color: white;
+}
+
+.mask {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4) url("../image/fdj.png") no-repeat center;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.classic_ct:hover .mask {
+    display: block;
+}
+
+.left, .right {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    text-align: center;
+    line-height: 52px;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.left {
+    left: -90px;
+}
+
+.right {
+    right: -90px;
+}
+
+.left:hover, .right:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/*经典案例 end*/
+
+/*-合作媒体 start*/
+.partner_bd ul li {
+    width: 210px;
+    height: 60px;
+    padding-top: 20px;
+    border-bottom: 1px dashed #ccc;
+    border-right: 1px dashed #ccc;
+    text-align: center;
+    float: left;
+}
+
+.partner_bd ul li:nth-of-type(10) ~ li {
+    border-bottom: none;
+}
+
+.partner_bd ul li:nth-of-type(5), .partner_bd ul li:nth-of-type(10), .partner_bd ul li:nth-of-type(15) {
+    border-right: none;
+}
+/*-合作媒体 end*/
+
+footer {
+    overflow: hidden;
+    margin-top: 50px;
+    height: 165px;
+    background: black;
+    text-align: center;
+    color: white;
+}
+.subnav{
+    margin: 50px auto 30px;
+}
+.subnav a{
+    font-size: 14px;
+    color: white;
+}
+footer p {
+    color: #888888;
 }

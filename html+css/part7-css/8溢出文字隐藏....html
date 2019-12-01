@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>溢出文字隐藏</title>
+    <style>
+        li {
+
+            /*text-overflow：
+                clip	修剪文本。
+                ellipsis	显示省略符号来代表被修剪的文本。
+                string	使用给定的字符串来代表被修剪的文本。
+            */
+
+            width: 200px;
+            height: 30px;
+            border: 1px solid red;
+
+            /*下面三句缺一不可*/
+
+            /*让在一行显示*/
+            white-space: nowrap;
+            /*超出的部分隐藏*/
+            overflow: hidden;
+            /*超出部分以...显示*/
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容</li>
+    <li>文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容</li>
+    <li>文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容</li>
+    <li>文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容</li>
+    <li>文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容</li>
+    <li>文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容</li>
+    <li>文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容</li>
+</ul>
+</body>
+</html>

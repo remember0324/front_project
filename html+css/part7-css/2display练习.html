@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标放上去显示与隐藏</title>
+    <style>
+        a {
+            display: block;
+            width: 448px;
+            height: 252px;
+            position: relative;
+        }
+
+        div {
+            height: 100%;
+            width: 100%;
+            /*背景为灰色，有个小图标(默认是隐藏的)*/
+            background: rgba(0, 0, 0, 0.3) url("../image/arr.png") no-repeat center;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /*鼠标放上a标签后，a标签下的div显示*/
+        a:hover div {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<a>
+    <img src="../image/tudou.jpg">
+    <div></div>
+</a>
+
+</body>
+</html>

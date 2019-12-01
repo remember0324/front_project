@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /*
+            外国出名的： https://icomoon.io(用这个)
+            字体图标网站：阿里：https://www.iconfont.cn
+
+        */
+
+        /*第一步：引入字体图标固定格式：*/
+        @font-face {
+            /*声明字体  引用字体*/
+            font-family: 'icomoon';  /*我们自己起名字可以*/
+            src: url('fonts/icomoon.eot?7kkyc2');
+            src: url('fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+            url('fonts/icomoon.ttf?7kkyc2') format('truetype'),
+            url('fonts/icomoon.woff?7kkyc2') format('woff'),
+            url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+            font-style: normal;  /*倾斜字体正常*/
+        }
+
+        /*第二步：再元素内加载字体图标后，声明字体*/
+        span, em {
+            font-family: "icomoon";
+            /*可以按照字体正常引入样式*/
+            font-size: 100px;
+            color: red;
+            font-style: normal;
+        }
+    </style>
+    <title>字体图标</title>
+</head>
+<body>
+
+<span></span>
+<em></em>
+
+</body>
+</html>

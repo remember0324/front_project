@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行高不带单位</title>
+    <style>
+        /*normalize.css 很小的css文件，解决跨浏览器高度一致的问题*/
+        body {
+            line-height: 1.5;
+        }
+
+        div {
+            font-size: 16px;
+            /*行高会继承，  div会继承父级的1.5 1.5*16（字体大小）和高度没有关系  所以行高是 24px*/
+        }
+
+        p {
+            /*行高45px*/
+            font-size: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<div>
+    行高不带单位1
+</div>
+
+<p>行高不带单位2</p>
+
+</body>
+</html>
