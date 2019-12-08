@@ -1,0 +1,148 @@
+.jd {
+    /*height: 480px;*/
+    background-color: pink;
+    position: relative;
+}
+
+.jd .jd-inner {
+    height: 480px;
+    background-color: skyblue;
+    position: relative;
+    z-index: 1;
+}
+
+.jd .ad {
+    width: 100%; /*给绝对定位的时候一定要给宽度，不然不起作用*/
+    height: 480px;
+    background: url("../images/bg.png") no-repeat top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ad a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.jd-clo1 {
+    padding-top: 12px;
+    width: 190px;
+    height: 468px;
+    float: left;
+    background-color: #6E6568;
+}
+
+.jd-clo1 li {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+}
+
+.jd-clo1 li:hover {
+    background-color: #999395;
+}
+
+.jd-clo1 li a {
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.jd-clo1 li a:hover {
+    color: red;
+}
+
+.jd-clo1 li span {
+    color: #fff;
+    font-size: 12px;
+}
+
+.jd-clo2 {
+    width: 790px;
+    height: 480px;
+    background: powderblue;
+    float: left;
+    margin-left: 10px;
+}
+.jd-clo2 ul{
+    width: 790px;
+    height: 340px;
+    margin-bottom: 10px;
+}
+
+.jd-clo2-hd {
+    position: relative;
+}
+
+.jd-clo2-hd ol {
+    padding: 0 3px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+
+}
+
+.jd-clo2-hd ol li {
+    background-color: #fff;
+    margin: 3px 5px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    float: left;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.jd-clo2-hd ol li:nth-of-type(1) {
+    margin-left: 6px;
+    background-color: red;
+}
+
+.jd-clo2-hd .pageturn {
+
+    height: 60px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    color: white;
+}
+
+.jd-clo2-hd .pageturn:nth-of-type(2) {
+    right: 0;
+}
+
+.jd-clo2-bd{
+    height: 130px;
+}
+.jd-clo2-bd div {
+    width: 390px;
+    float: left;
+}
+
+.jd-clo2-bd .firstPic {
+    margin-right: 10px;
+}
+
+.jd-clo2-bd div img {
+    width: 100%;
+    height: 100%;
+}
+
+.jd-clo3 {
+    width: 190px;
+    height: 480px;
+    background: #ff8715;
+    float: right;
+}
